@@ -37,164 +37,203 @@ Rectangle {
         y: 150
         columns: 4
         rows: 6
-        spacing: 8
+        spacing: 3
 
         Button {
             id: percentButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("%")
+            font.pixelSize: 32
         }
         Button {
             id: ceButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("CE")
+            font.pixelSize: 32
         }
         Button {
             id: cButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("C")
+            font.pixelSize: 32
         }
         Button {
             id: backButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("Back")
+            font.pixelSize: 28
         }
         Button {
             id: reciprocalButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("1/x")
+            font.pixelSize: 32
         }
         Button {
             id: squaredButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("x^2")
+            font.pixelSize: 32
         }
         Button {
             id: sqrtButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("sqrt")
+            font.pixelSize: 28
         }
         Button {
             id: divideButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("/")
+            font.pixelSize: 32
         }
         Button {
             id: sevenButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("7")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: eightButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("8")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: nineButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("9")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: multiplyButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("*")
+            font.pixelSize: 32
         }
         Button {
             id: fourButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("4")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: fiveButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("5")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: sixButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("6")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: minusButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("-")
+            font.pixelSize: 32
         }
         Button {
             id: oneButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("1")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: twoButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("2")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: threeButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("3")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: plusButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("+")
+            font.pixelSize: 32
         }
         Button {
             id: pmButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("+/-")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: zeroButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("0")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: decimalButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr(".")
+            palette.button: "#373737"
+            font.pixelSize: 32
         }
         Button {
             id: equalButton
-            width: 70
-            height: 50
+            width: 90
+            height: 70
             text: qsTr("=")
+            palette.button: "#47b1e8"
+            font.pixelSize: 32
+            icon.color: "#1e1e1e"
         }
     }
 
     TextField {
         id: resultField
-        width: 310
-        height: 70
+        width: 380
+        height: 100
         scale: 1
         anchors.horizontalCenter: parent.horizontalCenter
-        y: 50
+        y: 20
         placeholderText: qsTr("Result")
         readOnly: true
-        font.pixelSize: 36
+        font.pixelSize: 60
         horizontalAlignment: TextInput.AlignRight
+        anchors.horizontalCenterOffset: 0
     }
 }
