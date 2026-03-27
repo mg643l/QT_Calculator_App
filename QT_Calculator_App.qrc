@@ -7,6 +7,7 @@
         <file>QT_Calculator_App/qmldir</file>
         <file>QT_Calculator_AppContent/App.qml</file>
         <file>QT_Calculator_AppContent/CalcButton.ui.qml</file>
+        <file>QT_Calculator_AppContent/MemoryButton.ui.qml</file>
         <file>QT_Calculator_AppContent/Screen01.ui.qml</file>
         <file>qtquickcontrols2.conf</file>
     </qresource>

@@ -32,7 +32,7 @@ Window {
         sevenBtn.onClicked: logic.digitPressed(7)
         eightBtn.onClicked: logic.digitPressed(8)
         nineBtn.onClicked:  logic.digitPressed(9)
-
         backBtn.onClicked:  logic.backspace()
+        decimalBtn.onClicked: logic.decimalPressed()
     }
 }

@@ -23,6 +23,18 @@ void CalculatorLogic::backspace() {
     }
 }
 
+void CalculatorLogic::decimalPressed() {
+    if (m_freshStart) {
+        m_display = "0.";
+        m_freshStart = false;
+    } else {
+        if (!m_display.contains('.')) {
+            m_display += ".";
+        }
+    }
+    emit displayChanged(m_display);
+}
+
 QString CalculatorLogic::getDisplay() const {
     return m_display;
 }

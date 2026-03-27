@@ -12,6 +12,7 @@ qt6_add_qml_module(QT_Calculator_AppContent
         "App.qml"
         "Screen01.ui.qml"
         "CalcButton.ui.qml"
+        "MemoryButton.ui.qml"
 )
 
 

@@ -12,6 +12,7 @@ public:
 
 public slots:
     void digitPressed(int digit);
+    void decimalPressed();
     void backspace();
     QString getDisplay() const;
 

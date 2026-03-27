@@ -7,7 +7,7 @@ Button {
     // Custom properties for easy overrides in Screen01.ui.qml
     property color bgColor: "#2e2e2e"
     property color hoverColor: Qt.lighter(bgColor, 1.2)
-    property color pressedColor: Qt.darker(bgColor, 1.4) // 40% darker than base
+    property color pressedColor: Qt.darker(bgColor, 1.2) // 40% darker than base
     property color textColor: "#ffffff"
 
     width: 90

@@ -30,6 +30,71 @@ Rectangle {
     property alias nineBtn: nineButton
     property alias backBtn: backButton
     property alias result: resultField
+    property alias decimalBtn: decimalButton
+
+    TextField {
+        id: resultField
+        width: 380
+        height: 85
+        scale: 1
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: memoryRow.top
+        anchors.bottomMargin: 10
+        placeholderText: qsTr("Result")
+        readOnly: true
+        font.pixelSize: 60
+        horizontalAlignment: TextInput.AlignRight
+        anchors.horizontalCenterOffset: 0
+    }
+
+    TextField {
+        id: secondField
+        x: 90
+        y: 29
+        width: 300
+        height: 40
+        scale: 1
+        anchors.bottom: resultField.top
+        anchors.bottomMargin: 6
+        placeholderText: qsTr("")
+        readOnly: true
+        font.pixelSize: 15
+        horizontalAlignment: TextInput.AlignRight
+        anchors.horizontalCenterOffset: 0
+    }
+
+    Row {
+        id: memoryRow
+        spacing: 5
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: buttonGrid.top
+        anchors.bottomMargin: 5
+
+        MemoryButton {
+            id: memClear
+            text: "MC"
+        }
+        MemoryButton {
+            id: memRecall
+            text: "MR"
+        }
+        MemoryButton {
+            id: memAdd
+            text: "M+"
+        }
+        MemoryButton {
+            id: memSub
+            text: "M-"
+        }
+        MemoryButton {
+            id: memStore
+            text: "MS"
+        }
+        MemoryButton {
+            id: memVault
+            text: "Mv"
+        }
+    }
 
     Grid {
         id: buttonGrid
@@ -163,19 +228,5 @@ Rectangle {
             hoverColor: "#6cc4f5"
             textColor: "#1e1e1e"
         }
-    }
-
-    TextField {
-        id: resultField
-        width: 380
-        height: 100
-        scale: 1
-        anchors.horizontalCenter: parent.horizontalCenter
-        y: 50
-        placeholderText: qsTr("Result")
-        readOnly: true
-        font.pixelSize: 60
-        horizontalAlignment: TextInput.AlignRight
-        anchors.horizontalCenterOffset: 0
     }
 }
