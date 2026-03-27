@@ -35,6 +35,9 @@ Rectangle {
     property alias minusBtn: minusButton
     property alias multiplyBtn: multiplyButton
     property alias divideBtn: divideButton
+    property alias equalBtn: equalButton
+    property alias cBtn: cButton
+    property alias ceBtn: ceButton
     property alias secondResult: secondField
 
     TextField {

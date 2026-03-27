@@ -39,5 +39,9 @@ Window {
         minusBtn.onClicked: logic.operatorPressed("-")
         multiplyBtn.onClicked: logic.operatorPressed("*")
         divideBtn.onClicked: logic.operatorPressed("/")
+
+        equalBtn.onClicked: logic.equalsPressed()
+        cBtn.onClicked: logic.clear()
+        ceBtn.onClicked: logic.clear() //
     }
 }
