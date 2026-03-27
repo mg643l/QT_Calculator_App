@@ -13,7 +13,7 @@ import QT_Calculator_App
 Rectangle {
     id: rectangle
     width: 400
-    height: 620
+    height: 600
 
     color: palette.window
     anchors.fill: parent
@@ -43,7 +43,7 @@ Rectangle {
     TextField {
         id: resultField
         width: 380
-        height: 85
+        height: 80
         scale: 1
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: memoryRow.top
@@ -53,6 +53,15 @@ Rectangle {
         font.pixelSize: 60
         horizontalAlignment: TextInput.AlignRight
         anchors.horizontalCenterOffset: 0
+
+        background: Rectangle {
+            color: "transparent"
+            border.width: 0
+        }
+
+        color: "#ffffff" // Or whatever your text color is
+        selectionColor: "transparent" // Hide selection highlight
+        selectedTextColor: color
     }
 
     TextField {
@@ -62,12 +71,21 @@ Rectangle {
         scale: 1
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: resultField.top
-        anchors.bottomMargin: 6
+        anchors.bottomMargin: -10
         placeholderText: qsTr("")
         readOnly: true
-        font.pixelSize: 15
+        font.pixelSize: 25
         horizontalAlignment: TextInput.AlignRight
         anchors.horizontalCenterOffset: 0
+
+        background: Rectangle {
+            color: "transparent"
+            border.width: 0
+        }
+
+        color: "#767676" // Or whatever your text color is
+        selectionColor: "transparent" // Hide selection highlight
+        selectedTextColor: color
     }
 
     Row {

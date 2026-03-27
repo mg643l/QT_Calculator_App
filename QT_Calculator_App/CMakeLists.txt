@@ -18,6 +18,7 @@ qt6_add_qml_module(QT_Calculator_App
         "EventListModel.qml"
         "EventListSimulator.qml"
         SOURCES calculatorlogic.cpp
+        SOURCES calculatorlogic.cpp
 )
 
 

@@ -3,11 +3,11 @@ import QT_Calculator_App
 
 Window {
     width: 400
-    height:620
+    height:600
     minimumWidth: 400
-    minimumHeight: 620
+    minimumHeight: 600
     maximumWidth: 400
-    maximumHeight: 620
+    maximumHeight: 600
     visible: true
     title: "QT_Calculator_App"
 
