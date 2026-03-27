@@ -34,192 +34,134 @@ Rectangle {
     Grid {
         id: buttonGrid
         anchors.horizontalCenter: parent.horizontalCenter
-        y: 150
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 20
         columns: 4
         rows: 6
         spacing: 3
 
-        Button {
+        // Functional buttons (using defaults)
+        CalcButton {
             id: percentButton
-            width: 90
-            height: 70
-            text: qsTr("%")
-            font.pixelSize: 32
+            text: "%"
         }
-        Button {
+        CalcButton {
             id: ceButton
-            width: 90
-            height: 70
-            text: qsTr("CE")
-            font.pixelSize: 32
+            text: "CE"
         }
-        Button {
+        CalcButton {
             id: cButton
-            width: 90
-            height: 70
-            text: qsTr("C")
-            font.pixelSize: 32
+            text: "C"
         }
-        Button {
+        CalcButton {
             id: backButton
-            width: 90
-            height: 70
-            text: qsTr("Back")
+            text: "Back"
             font.pixelSize: 28
         }
-        Button {
+
+        // Math operation buttons
+        CalcButton {
             id: reciprocalButton
-            width: 90
-            height: 70
-            text: qsTr("1/x")
-            font.pixelSize: 32
+            text: "1/x"
         }
-        Button {
+        CalcButton {
             id: squaredButton
-            width: 90
-            height: 70
-            text: qsTr("x^2")
-            font.pixelSize: 32
+            text: "x^2"
         }
-        Button {
+        CalcButton {
             id: sqrtButton
-            width: 90
-            height: 70
-            text: qsTr("sqrt")
+            text: "sqrt"
             font.pixelSize: 28
         }
-        Button {
+        CalcButton {
             id: divideButton
-            width: 90
-            height: 70
-            text: qsTr("/")
-            font.pixelSize: 32
+            text: "/"
         }
-        Button {
+
+        // Number buttons (overriding with your specific grey)
+        CalcButton {
             id: sevenButton
-            width: 90
-            height: 70
-            text: qsTr("7")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "7"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: eightButton
-            width: 90
-            height: 70
-            text: qsTr("8")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "8"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: nineButton
-            width: 90
-            height: 70
-            text: qsTr("9")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "9"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: multiplyButton
-            width: 90
-            height: 70
-            text: qsTr("*")
-            font.pixelSize: 32
+            text: "*"
         }
-        Button {
+
+        CalcButton {
             id: fourButton
-            width: 90
-            height: 70
-            text: qsTr("4")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "4"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: fiveButton
-            width: 90
-            height: 70
-            text: qsTr("5")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "5"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: sixButton
-            width: 90
-            height: 70
-            text: qsTr("6")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "6"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: minusButton
-            width: 90
-            height: 70
-            text: qsTr("-")
-            font.pixelSize: 32
+            text: "-"
         }
-        Button {
+
+        CalcButton {
             id: oneButton
-            width: 90
-            height: 70
-            text: qsTr("1")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "1"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: twoButton
-            width: 90
-            height: 70
-            text: qsTr("2")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "2"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: threeButton
-            width: 90
-            height: 70
-            text: qsTr("3")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "3"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: plusButton
-            width: 90
-            height: 70
-            text: qsTr("+")
-            font.pixelSize: 32
+            text: "+"
         }
-        Button {
+
+        CalcButton {
             id: pmButton
-            width: 90
-            height: 70
-            text: qsTr("+/-")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "+/-"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: zeroButton
-            width: 90
-            height: 70
-            text: qsTr("0")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "0"
+            bgColor: "#373737"
         }
-        Button {
+        CalcButton {
             id: decimalButton
-            width: 90
-            height: 70
-            text: qsTr(".")
-            palette.button: "#373737"
-            font.pixelSize: 32
+            text: "."
+            bgColor: "#373737"
         }
-        Button {
+
+        // Blue Equal button
+        CalcButton {
             id: equalButton
-            width: 90
-            height: 70
-            text: qsTr("=")
-            palette.button: "#47b1e8"
-            font.pixelSize: 32
-            icon.color: "#1e1e1e"
+            text: "="
+            bgColor: "#47b1e8"
+            hoverColor: "#6cc4f5"
+            textColor: "#1e1e1e"
         }
     }
 
@@ -229,7 +171,7 @@ Rectangle {
         height: 100
         scale: 1
         anchors.horizontalCenter: parent.horizontalCenter
-        y: 20
+        y: 50
         placeholderText: qsTr("Result")
         readOnly: true
         font.pixelSize: 60
