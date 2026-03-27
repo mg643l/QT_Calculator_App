@@ -13,7 +13,7 @@ import QT_Calculator_App
 Rectangle {
     id: rectangle
     width: 400
-    height: 600
+    height: 620
 
     color: palette.window
     anchors.fill: parent
@@ -31,6 +31,11 @@ Rectangle {
     property alias backBtn: backButton
     property alias result: resultField
     property alias decimalBtn: decimalButton
+    property alias plusBtn: plusButton
+    property alias minusBtn: minusButton
+    property alias multiplyBtn: multiplyButton
+    property alias divideBtn: divideButton
+    property alias secondResult: secondField
 
     TextField {
         id: resultField
@@ -49,11 +54,10 @@ Rectangle {
 
     TextField {
         id: secondField
-        x: 90
-        y: 29
-        width: 300
+        width: 380
         height: 40
         scale: 1
+        anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: resultField.top
         anchors.bottomMargin: 6
         placeholderText: qsTr("")
@@ -100,7 +104,7 @@ Rectangle {
         id: buttonGrid
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 20
+        anchors.bottomMargin: 15
         columns: 4
         rows: 6
         spacing: 3

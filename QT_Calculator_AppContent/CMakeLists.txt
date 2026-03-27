@@ -10,9 +10,9 @@ qt6_add_qml_module(QT_Calculator_AppContent
     RESOURCE_PREFIX "/qt/qml"
     QML_FILES
         "App.qml"
-        "Screen01.ui.qml"
         "CalcButton.ui.qml"
         "MemoryButton.ui.qml"
+        "Screen01.ui.qml"
 )
 
 

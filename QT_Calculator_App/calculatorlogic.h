@@ -14,10 +14,12 @@ public slots:
     void digitPressed(int digit);
     void decimalPressed();
     void backspace();
+    void operatorPressed(const QString &op);
     QString getDisplay() const;
 
 signals:
     void displayChanged(const QString &newDisplay);
+    void secondaryDisplayChanged(const QString &newDisplay);
 
 private:
     QString m_display;

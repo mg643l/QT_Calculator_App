@@ -3,17 +3,18 @@ import QT_Calculator_App
 
 Window {
     width: 400
-    height: 600
+    height:620
     minimumWidth: 400
-    minimumHeight: 600
+    minimumHeight: 620
     maximumWidth: 400
-    maximumHeight: 600
+    maximumHeight: 620
     visible: true
     title: "QT_Calculator_App"
 
     CalculatorLogic {
         id: logic
         onDisplayChanged: (newDisplay) => mainScreen.result.text = newDisplay
+        onSecondaryDisplayChanged: (newDisplay) => mainScreen.secondResult.text = newDisplay
     }
 
     Screen01 {
@@ -34,5 +35,9 @@ Window {
         nineBtn.onClicked:  logic.digitPressed(9)
         backBtn.onClicked:  logic.backspace()
         decimalBtn.onClicked: logic.decimalPressed()
+        plusBtn.onClicked: logic.operatorPressed("+")
+        minusBtn.onClicked: logic.operatorPressed("-")
+        multiplyBtn.onClicked: logic.operatorPressed("*")
+        divideBtn.onClicked: logic.operatorPressed("/")
     }
 }

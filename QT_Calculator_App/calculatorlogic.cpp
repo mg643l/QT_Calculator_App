@@ -35,6 +35,12 @@ void CalculatorLogic::decimalPressed() {
     emit displayChanged(m_display);
 }
 
+void CalculatorLogic::operatorPressed(const QString &op) {
+    QString secondaryText = m_display + " " + op;
+    emit secondaryDisplayChanged(secondaryText);
+    m_freshStart = true;
+}
+
 QString CalculatorLogic::getDisplay() const {
     return m_display;
 }
